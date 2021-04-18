@@ -32,11 +32,7 @@ TEST(set1, test3) {
     tDoor.unlock();
   }
   catch(std::string message) {
-<<<<<<< HEAD
     EXPECT_EQ(message, "close the door!");
-=======
-    EXPECT_EQ(message, "Close the door please!");
->>>>>>> 670b072efa3d56cc81f0ed6ed2ad914c215dc8fc
   }
 }
 
