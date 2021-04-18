@@ -27,8 +27,10 @@ void TimedDoor::throwState() {
 }
 
 void Timer::sleep(int timeIn) {
-  time_t tm = clock();
-  while (clock() < timeIn + tm / CLOCKS_PER_SEC) {}
+  time_t tm = time(nullptr);
+  while (time(nullptr) - tm < timeIn) {
+    continue;
+  }
 }
 
 void Timer::tregister(int timeIn, TimerClient* clientIn) {
