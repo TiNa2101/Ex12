@@ -16,7 +16,7 @@ void TimedDoor::unlock() {
 
 void TimedDoor::lock() { opened = false; }
 
-void TimedDoor::DoorTimeOut() { throw std::string("Close the door please!"); }
+void TimedDoor::DoorTimeOut() { throw std::string("close the door!"); }
 
 void TimedDoor::throwState() {
   if (opened) {

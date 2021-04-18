@@ -11,7 +11,7 @@ TEST(set1, test1) {
     tDoor.throwState();
   }
   catch(std::string message) {
-    EXPECT_EQ(message, "The door is closed!");
+    EXPECT_EQ(message, "the door is closed!");
   }
 }
 
@@ -22,7 +22,7 @@ TEST(set1, test2) {
     tDoor.throwState();
   }
   catch(std::string message) {
-    EXPECT_NE(message, "The door is opened!");
+    EXPECT_NE(message, "the door is opened!");
   }
 }
 
@@ -32,7 +32,7 @@ TEST(set1, test3) {
     tDoor.unlock();
   }
   catch(std::string message) {
-    EXPECT_EQ(message, "Close the door!");
+    EXPECT_EQ(message, "close the door!");
   }
 }
 
