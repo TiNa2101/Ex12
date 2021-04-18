@@ -20,9 +20,9 @@ void TimedDoor::DoorTimeOut() { throw std::string("Close the door please!"); }
 
 void TimedDoor::throwState() {
   if (opened) {
-    throw std::string("The door is opened!");
+    throw std::string("the door is opened!");
   } else {
-    throw std::string("The door is closed!");
+    throw std::string("the door is closed!");
   }
 }
 

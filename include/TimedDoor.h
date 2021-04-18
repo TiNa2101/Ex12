@@ -23,7 +23,7 @@ class DoorTimerAdapter : public TimerClient {
   TimedDoor& door;
 
  public:
-  explicit DoorTimerAdapter(TimedDoor& doorIn) : door(doorIn) {};
+  explicit DoorTimerAdapter(TimedDoor& doorIn) : door(doorIn) {}
   void Timeout() override;
 };
 
@@ -35,7 +35,7 @@ class TimedDoor : public Door {
 
  public:
   explicit TimedDoor(int time)
-      : iTimeout(time), opened(false), adapter(new DoorTimerAdapter(*this)) {};
+      : iTimeout(time), opened(false), adapter(new DoorTimerAdapter(*this)) {}
   bool isDoorOpened() override;
   void unlock() override;
   void lock() override;
